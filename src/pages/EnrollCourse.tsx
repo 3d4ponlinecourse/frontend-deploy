@@ -14,7 +14,7 @@ const EnrollCourse = () => {
     const token = localStorage.getItem("token");
 
     try {
-      await fetch(`http://${host}/user/enroll`, {
+      await fetch(`${host}/user/enroll`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const useProfile = () => {
       const token = localStorage.getItem("token");
       setIsLoading(true);
       try {
-        const res = await fetch(`http://${host}/user/enroll/${userId}`, {
+        const res = await fetch(`${host}/user/enroll/${userId}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

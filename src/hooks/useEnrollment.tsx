@@ -10,7 +10,7 @@ const useEnrollment = (username: string) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(`http://${host}/enrollment/${username}`);
+        const res = await fetch(`${host}/enrollment/${username}`);
         const data = await res.json();
 
         useEnrollment(data);

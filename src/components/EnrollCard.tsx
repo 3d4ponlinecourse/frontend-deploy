@@ -29,7 +29,7 @@ const EnrollCard = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch(`http://${host}/user/enroll`, {
+      const res = await fetch(`${host}/user/enroll`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

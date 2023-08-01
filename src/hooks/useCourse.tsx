@@ -11,7 +11,7 @@ const useCourse = (id: number) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(`http://${host}/course/${id}`);
+        const res = await fetch(`${host}/course/${id}`);
         const data = await res.json();
         console.log(data);
 

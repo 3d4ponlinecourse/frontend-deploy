@@ -11,7 +11,7 @@ const useCourseList = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(`http://${host}/course`);
+        const res = await fetch(`${host}/course`);
         const data = await res.json();
 
         setCourseList(data);

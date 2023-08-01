@@ -26,7 +26,7 @@ const Editprofile = () => {
     const token = localStorage.getItem("token");
     const userId = localStorage.getItem("userId");
     try {
-      const res = await fetch(`http://${host}/enroll//update/${userId}`, {
+      const res = await fetch(`${host}/enroll//update/${userId}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

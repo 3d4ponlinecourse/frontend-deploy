@@ -7,7 +7,7 @@ COPY . .
 
 RUN npm install -g pnpm
 RUN pnpm install
-RUN VITE_BE_URL="api.3d4p.cleverse.academy" pnpm build
+RUN VITE_BE_URL="https://api.3d4p.cleverse.academy" pnpm build
 
 # Step 1: copy built React app into base NGINX image
 FROM nginx:latest

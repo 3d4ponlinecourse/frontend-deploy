@@ -21,7 +21,7 @@ const PostReviews = ({ courseId }: IPostReviewsProps) => {
     const userId = localStorage.getItem("userId");
 
     try {
-      await fetch(`http://${host}/comment`, {
+      await fetch(`${host}/comment`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

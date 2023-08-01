@@ -10,7 +10,7 @@ const useUsers = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(`http://${host}/user`);
+        const res = await fetch(`${host}/user`);
         const data = await res.json();
 
         useUsers(data);

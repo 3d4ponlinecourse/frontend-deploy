@@ -10,7 +10,7 @@ const useLesson = (id: string) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(`http://${host}/lesson/${id}`);
+        const res = await fetch(`${host}/lesson/${id}`);
         const data = await res.json();
 
         useLesson(data);

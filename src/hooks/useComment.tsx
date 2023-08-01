@@ -11,7 +11,7 @@ const useComment = (id: number) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(`http://${host}/comment`);
+        const res = await fetch(`${host}/comment`);
         const data = await res.json();
         console.log(data);
 
